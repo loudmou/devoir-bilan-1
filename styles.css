@@ -1,0 +1,256 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f8;
+    color: #222;
+}
+
+/* CONTAINER */
+.cv-container {
+    width: 1160px;
+    margin: 40px auto;
+    background: #f5f7f8; /* fond gris */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.cv-header {
+    display: flex;
+    background: #1aa6b8;
+    padding: 30px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 300px;
+    gap: 12px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* PHOTO — EFFET N°2 */
+.photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    cursor: zoom-in;               /* curseur zoom */
+    transition: transform 0.3s ease;
+}
+
+.photo:hover {
+    transform: scale(1.05);        /* zoom léger */
+}
+
+/* MAIN */
+.cv-main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* COLONNE GAUCHE */
+.column-left {
+    background: #f5f7f8;
+    padding: 10px;
+}
+
+.column-left .block {
+    background: #f9fafa;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 22px;
+}
+
+.column-left .block-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1aa6b8;
+    margin-bottom: 12px;
+}
+
+.column-left ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.column-left li {
+    margin-bottom: 6px;
+}
+
+/* COMPÉTENCES */
+.skills-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    gap: 4px;
+}
+
+.star {
+    font-size: 1rem;
+}
+
+.star.filled {
+    color: #1aa6b8;
+}
+
+.star.empty {
+    color: #d1d5db;
+}
+
+/* COLONNE DROITE */
+.column-right {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.column-right .block {
+    background: #f9fafa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 22px;
+}
+
+.column-right .block-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1aa6b8;
+    margin-bottom: 12px;
+}
+
+/* PROFIL — JUSTIFIÉ + INDENTÉ */
+.profile-text {
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ITEMS — EFFET N°1 */
+.item {
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 4px solid transparent;
+    transition: 0.3s ease;
+}
+
+.item:hover {
+    border-left: 4px solid #1aa6b8; /* turquoise */
+    background: #eefbfd;            /* bleu clair */
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.item-subtitle {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.item-tasks {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+.no-data {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* FOOTER */
+.cv-footer {
+    text-align: center;
+    padding: 18px;
+    background: #1aa6b8;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 10px;
+}
+
+/* EFFET N°3 — Icônes réseaux */
+.footer-icon {
+    width: 28px;
+    height: 28px;
+    opacity: 0.85;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    opacity: 0.6;
+    transform: scale(1.15);
+}
